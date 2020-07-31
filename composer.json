@@ -14,7 +14,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "koliachev\\todolist\\TodolistServiceProvider"
+                "Koliachev\\Todolist\\TodoListServiceProvider"
             ]
         }
     },
