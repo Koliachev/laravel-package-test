@@ -1,2 +1,2 @@
 <?php
-Route::resource('/task', 'Koliachev\Todolist\TaskController');
+Route::resource('/task', 'Koliachev\TodoList\TaskController');
