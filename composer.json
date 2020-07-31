@@ -1,0 +1,26 @@
+{
+    "name": "wisdmlabs/todolist",
+    "description": "You can create the to-do-list of your task.",
+    "authors": [
+        {
+            "name": "John Doe",
+            "email": "john.doe@wisdmlabs.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "laravelcollective/html": "^5.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "wisdmlabs\\todolist\\TodolistServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "WisdmLabs\\TodoList\\": "src/"
+        }
+    }
+}
