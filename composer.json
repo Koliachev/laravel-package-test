@@ -10,7 +10,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "laravelcollective/html": "^5.5"
     },
     "extra": {
         "laravel": {
