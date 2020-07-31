@@ -1,5 +1,5 @@
 {
-    "name": "wisdmlabs/todolist",
+    "name": "koliachev/todolist",
     "description": "You can create the to-do-list of your task.",
     "authors": [
         {
@@ -14,13 +14,13 @@
     "extra": {
         "laravel": {
             "providers": [
-                "wisdmlabs\\todolist\\TodolistServiceProvider"
+                "koliachev\\todolist\\TodolistServiceProvider"
             ]
         }
     },
     "autoload": {
         "psr-4": {
-            "WisdmLabs\\TodoList\\": "src/"
+            "Koliachev\\TodoList\\": "src/"
         }
     }
 }

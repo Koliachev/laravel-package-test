@@ -1,4 +1,4 @@
-@extends('wisdmlabs.todolist.app')
+@extends('koliachev.todolist.app')
 @section('content')
     @if(isset($task))
         <h3>Edit : </h3>

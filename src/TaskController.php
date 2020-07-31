@@ -1,10 +1,10 @@
 <?php
 
-namespace WisdmLabs\TodoList;
+namespace Koliachev\TodoList;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use WisdmLabs\TodoList\Task;
+use Koliachev\TodoList\Task;
 
 class TaskController extends Controller
 {
@@ -17,7 +17,7 @@ class TaskController extends Controller
     {
         $tasks = Task::all();
         $submit = 'Add';
-        return view('wisdmlabs.todolist.list', compact('tasks', 'submit'));
+        return view('koliachev.todolist.list', compact('tasks', 'submit'));
     }
 
     public function store(Request $request)
@@ -32,7 +32,7 @@ class TaskController extends Controller
         $tasks = Task::all();
         $task = $tasks->find($id);
         $submit = 'Update';
-        return view('wisdmlabs.todolist.list', compact('tasks', 'task', 'submit'));
+        return view('koliachev.todolist.list', compact('tasks', 'task', 'submit'));
     }
 
     public function update(Request $request, $id)

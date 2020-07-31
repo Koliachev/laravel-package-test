@@ -1,6 +1,6 @@
 <?php
 
-namespace WisdmLabs\TodoList;
+namespace Koliachev\TodoList;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,7 +13,7 @@ class TodoListServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('WisdmLabs\TodoList\TaskController');
+        $this->app->make('Koliachev\TodoList\TaskController');
     }
 
     /**
@@ -27,7 +27,7 @@ class TodoListServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/migrations');
         $this->loadViewsFrom(__DIR__.'/views', 'todolist');
         $this->publishes([
-            __DIR__.'/views' => base_path('resources/views/wisdmlabs/todolist'),
+            __DIR__.'/views' => base_path('resources/views/koliachev/todolist'),
         ]);
 
         // $this->publishes([ __DIR__.'/config' => config_path()]);
